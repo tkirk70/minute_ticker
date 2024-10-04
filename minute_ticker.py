@@ -4,7 +4,8 @@ import pandas as pd
 import time
 
 # List of tickers
-tickers = ["SOXL", "AAPL", "MSFT", "GOOGL"]
+# tickers = ["SOXL", "AAPL", "MSFT", "GOOGL"]
+tickers = ["SOXL"]
 
 # Function to fetch data
 def fetch_data(tickers):
