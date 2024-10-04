@@ -4,14 +4,14 @@ import pandas as pd
 import time
 
 # List of tickers
-tickers = ["AAPL", "MSFT", "GOOGL"]
+tickers = ["SOXL", "AAPL", "MSFT", "GOOGL"]
 
 # Function to fetch data
 def fetch_data(tickers):
     data = {}
     for ticker in tickers:
         stock = yf.Ticker(ticker)
-        data[ticker] = stock.history(period="1d")
+        data[ticker] = stock.history(period="1d", interval="1m")
     return data
 
 # Streamlit app
